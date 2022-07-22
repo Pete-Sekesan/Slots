@@ -33,7 +33,7 @@ struct ContentView: View {
                     .resizable()
                     .scaledToFill()
                     .frame(width: 120, height: 120)
-                Image("fruit\(slotTwo)")
+                Image("fruit\(slotThree)")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 120, height: 120)
