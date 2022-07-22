@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    //set state variables
+    @State var  slotOne = 1
+    @State var  slotTwo = 2
+    @State var  slotThree = 3
+    @State var credits = 1000
+    
     var body: some View {
         VStack {
                 Text("SwiftUI Slots!")
@@ -15,25 +21,28 @@ struct ContentView: View {
                 .fontWeight(.semibold)
                 .padding(.top, 20.0)
             Spacer()
-            Text("placeholder score text")
+            Text("Credits:" + String(credits))
                 .font(/*@START_MENU_TOKEN@*/.subheadline/*@END_MENU_TOKEN@*/)
             Spacer()
             HStack{
-                Image("apple")
+                Image("fruit\(slotOne)")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 120, height: 120)
-                Image("star")
+                Image("fruit\(slotTwo)")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 120, height: 120)
-                Image("cherry")
+                Image("fruit\(slotTwo)")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 120, height: 120)
             }
             Spacer()
             Button {
+                //
+                
+                
             } label: {
                 Text("Spin")
                 
