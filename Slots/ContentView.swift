@@ -40,8 +40,16 @@ struct ContentView: View {
             }
             Spacer()
             Button {
-                //
+                // randomize the numbers on spin
+                slotOne = Int.random(in: 1...3)
+                slotTwo = Int.random(in: 1...3)
+                slotThree = Int.random(in: 1...3)
                 
+                //set randomized number to image
+                
+                if slotOne == slotTwo && slotTwo == slotThree{
+                    credits += 15
+                } else { credits -= 5}
                 
             } label: {
                 Text("Spin")
