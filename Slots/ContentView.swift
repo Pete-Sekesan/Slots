@@ -61,9 +61,19 @@ struct ContentView: View {
             .foregroundColor(Color.white)
             .cornerRadius(90)
             Spacer()
-
-                
-        }
+            Button {
+            credits += 500
+            } label: {
+                Text("Add More Credits")
+            }
+            .padding()
+            .frame(width:200,height: 40)
+            .background(Color.green)
+            .foregroundColor(Color.white)
+            .cornerRadius(90)
+            
+}
+       
     }
 }
 
